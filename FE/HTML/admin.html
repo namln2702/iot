@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Bãi Đỗ Xe</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/admin.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="admin-container col-sm-6">
+          <h2 class="text-center">Quản Lý Bãi Đỗ Xe</h2>
+          <div class="info-title">
+            <h4>Thông Tin Hiện Tại</h4>
+          </div>
+          <div class="slot">
+            Nhiệt độ bãi giữ xe: <span id="temperature">25°C</span>
+          </div>
+          <div class="slot">
+            Số slot còn trống: <span id="available-slots">4</span>
+          </div>
+          <div class="row text-center mt-2 mb-3">
+            <div class="text-center mt-2 col-6">
+              <button id="openGateButtonIn" class="btn btn-success">
+                Mở Cửa Vào
+              </button>
+            </div>
+            <div class="text-center mt-2">
+              <button id="openGateButtonOut" class="btn btn-success">
+                Mở Của Ra
+              </button>
+            </div>
+          </div>
+          <div class="row text-center mt-2 mb-3">
+            <div class="text-center mt-2 col-6">
+              <button id="closeGateButtonIn" class="btn btn-success">
+                Đóng Cửa Vào
+              </button>
+            </div>
+            <div class="text-center mt-2">
+              <button id="closeGateButtonOut" class="btn btn-success">
+                Đóng Cửa Ra
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-container col-sm-5">
+          <h4 class="text-center">Vị Trí Đỗ Xe</h4>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Vị Trí</th>
+                <th>Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td id="slot-1">Chưa có xe</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td id="slot-2">Chưa có xe</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td id="slot-3">Chưa có xe</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td id="slot-4">Chưa có xe</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-8">
+        <h4 class="text-center">Xe Vào</h4>
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Biển Số Xe</th>
+                <th>Giờ Vào</th>
+              </tr>
+            </thead>
+            <tbody id="entry-table-body">
+              <tr>
+                <td colspan="2">Chưa có xe vào</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 class="text-center">Xe Ra</h4>
+        <div class="table-container mt-4">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Biển Số Xe</th>
+                <th>Giờ Vào</th>
+                <th>Giờ Ra</th>
+              </tr>
+            </thead>
+            <tbody id="exit-table-body">
+              <tr>
+                <td colspan="3">Chưa có xe ra</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/JS/admin.js"></script>
+  </body>
+</html>

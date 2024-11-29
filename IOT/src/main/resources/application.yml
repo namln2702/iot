@@ -1,0 +1,24 @@
+#spring.application.name=IOT
+#
+#spring.datasource.url=jdbc:postgresql://localhost:5432/parking
+#spring.datasource.username=postgres
+#spring.datasource.password=password
+#spring.jpa.show-sql=true
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+
+spring:
+  application:
+    name: IOT
+  datasource:
+    url: jdbc:postgresql://localhost:5432/parking
+    username: postgres
+    password: password
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

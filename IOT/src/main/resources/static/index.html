@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Bãi Đỗ Xe</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Quản Lý Bãi Đỗ Xe</h1>
+
+    <div id="notifications"></div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Biển Số Xe</th>
+            <th>Thời Gian Vào</th>
+            <th>Thời Gian Ra</th>
+        </tr>
+        </thead>
+        <tbody id="carTableBody">
+        <!-- Dữ liệu xe sẽ được thêm vào đây -->
+        </tbody>
+    </table>
+</div>
+<script type="importmap">
+    {
+      "imports": {
+        "@stomp/stompjs": "https://ga.jspm.io/npm:@stomp/stompjs@7.0.0/esm6/index.js"
+      }
+    }
+</script>
+
+<!-- ES Module Shims: Import maps polyfill for modules browsers without import maps support (all except Chrome 89+) -->
+<script
+        async
+        src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js"
+        crossorigin="anonymous"
+></script>
+<script src="index.js"></script>
+</body>
+</html>
